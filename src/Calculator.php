@@ -4,8 +4,8 @@ namespace tdd;
 
 final class Calculator
 {
-    public function divide_10_by_2(): int
+    public function divide(int $dividend, int $divisor): int
     {
-        return 10 / 2;
+        return $dividend / $divisor;
     }
 }

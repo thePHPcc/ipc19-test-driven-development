@@ -10,6 +10,6 @@ final class CalculatorTest extends TestCase
     {
         $calculator = new Calculator;
 
-        $this->assertSame(5, $calculator->divide_10_by_2());
+        $this->assertSame(5, $calculator->divide(10, 2));
     }
 }
