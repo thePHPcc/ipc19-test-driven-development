@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 namespace tdd;
 
-final class Field
+class Field
 {
     /**
      * @var string

@@ -8,7 +8,8 @@ spl_autoload_register(
         if ($classes === null) {
             $classes = array(
                 'tdd\\calculator' => '/Calculator.php',
-                'tdd\\field' => '/Field.php'
+                'tdd\\field' => '/Field.php',
+                'tdd\\tictactoe' => '/TicTacToe.php'
             );
         }
         $cn = strtolower($class);
