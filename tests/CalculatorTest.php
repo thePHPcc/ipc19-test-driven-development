@@ -1,5 +1,4 @@
 <?php declare(strict_types=1);
-
 namespace tdd;
 
 use PHPUnit\Framework\TestCase;
@@ -21,10 +20,10 @@ final class CalculatorTest extends TestCase
     {
         return [
             '10 / 2 = 5' => [
-                5, 10, 2
+                5, 10, 2,
             ],
             '12 / 4 = 3' => [
-                3, 12, 4
+                3, 12, 4,
             ],
         ];
     }
