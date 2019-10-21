@@ -6,10 +6,26 @@ use PHPUnit\Framework\TestCase;
 
 final class CalculatorTest extends TestCase
 {
-    public function test_Result_of_10_divided_by_2_should_be_5(): void
+    /**
+     * @dataProvider divisionProvider
+     * @testdox $dividend ÷ $divisor = $expected
+     */
+    public function test_Result_of_whatever_divided_by_whatever_should_be_whatever(int $expected, int $dividend, int $divisor): void
     {
         $calculator = new Calculator;
 
-        $this->assertSame(5, $calculator->divide(10, 2));
+        $this->assertSame($expected, $calculator->divide($dividend, $divisor));
+    }
+
+    public function divisionProvider(): array
+    {
+        return [
+            '10 / 2 = 5' => [
+                5, 10, 2
+            ],
+            '12 / 4 = 3' => [
+                3, 12, 4
+            ],
+        ];
     }
 }
