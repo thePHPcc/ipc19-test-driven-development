@@ -17,3 +17,15 @@ This is example code that is not production-ready. It is intended for studying a
 * `php tools/phpunit`: Run tests
 * `php tools/psalm`: Run type checker
 * `php tools/php-cs-fixer fix`: Format code
+
+### Result of 1-2-4-All
+
+[1-2-4-All](http://www.liberatingstructures.com/1-1-2-4-all/) to gather the requirements for Tic-Tac-Toe.
+
+![Flip Chart](img/124all_001.jpg)
+![Flip Chart](img/124all_002.jpg)
+![Flip Chart](img/124all_003.jpg)
+![Flip Chart](img/124all_004.jpg)
+![Flip Chart](img/124all_005.jpg)
+![Flip Chart](img/124all_006.jpg)
+![Flip Chart](img/124all_007.jpg)
