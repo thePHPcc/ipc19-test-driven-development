@@ -29,4 +29,26 @@ final class FieldTest extends TestCase
 
         $this->assertFalse($field->isEmpty());
     }
+
+    public function testXCannotBePlacedOnFieldThatIsNotEmpty(): void
+    {
+        $field = new Field;
+
+        $field->placeO();
+
+        $this->expectException(\RuntimeException::class);
+
+        $field->placeX();
+    }
+
+    public function testOCannotBePlacedOnFieldThatIsNotEmpty(): void
+    {
+        $field = new Field;
+
+        $field->placeX();
+
+        $this->expectException(\RuntimeException::class);
+
+        $field->placeO();
+    }
 }

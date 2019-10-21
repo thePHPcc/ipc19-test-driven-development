@@ -15,11 +15,19 @@ final class Field
 
     public function placeX(): void
     {
+        if (!$this->isEmpty()) {
+            throw new \RuntimeException('Cannot place X on non-empty field');
+        }
+
         $this->symbol = 'X';
     }
 
     public function placeO(): void
     {
+        if (!$this->isEmpty()) {
+            throw new \RuntimeException('Cannot place O on non-empty field');
+        }
+
         $this->symbol = 'O';
     }
 }
